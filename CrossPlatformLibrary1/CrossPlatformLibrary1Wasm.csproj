@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Uno.UI.Runtime.WebAssembly" Version="3.5.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <Compile Include="**\*.wasm.cs" />
+    <Compile Include="**\*.wasm.*.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="LinkerDefinition.Wasm.xml">
+      <LogicalName>$(AssemblyName).xml</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+
+  <!-- JAVASCRIPT FOR WASM -->
+  <ItemGroup>
+  </ItemGroup>
+
+</Project>
