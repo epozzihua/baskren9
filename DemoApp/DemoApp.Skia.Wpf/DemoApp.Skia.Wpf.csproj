@@ -14,7 +14,7 @@
     <UpToDateCheckInput Include="..\DemoApp.Shared\**\*.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossPlatformLibrary1\CrossPlatformLibrary1.Skia.csproj" />
+    <ProjectReference Include="..\..\CrossPlatformLibrary1\CrossPlatformLibrary1.Skia.Wpf.csproj" />
   </ItemGroup>
   <Import Project="..\DemoApp.Shared\DemoApp.Shared.projitems" Label="Shared" />
 </Project>
